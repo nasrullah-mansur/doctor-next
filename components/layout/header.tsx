@@ -40,7 +40,7 @@ export default function Header({ onNavigate, currentView }: { onNavigate?: (view
 
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'py-2 glass shadow-lg border-b border-gray-200' : 'py-6 bg-transparent'}`}>
+        <nav className={`fixed w-full z-50 transition-all duration-500 border-transparent ${scrolled ? 'py-2 glass shadow-lg border-b border-gray-200' : 'py-6 bg-transparent'}`}>
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex justify-between items-center">
                     {/* Brand */}
