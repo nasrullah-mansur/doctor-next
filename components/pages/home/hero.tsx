@@ -19,7 +19,7 @@ export default function Hero() {
                     <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                         {/* Left Content */}
                         <div className="text-center lg:text-left space-y-8 animate-in fade-in slide-in-from-left-8 duration-700">
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary border border-border text-blue-500 text-[11px] font-bold tracking-wider uppercase">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary border border-gray-200 text-blue-500 text-[11px] font-bold tracking-wider uppercase">
                                 <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
@@ -48,25 +48,25 @@ export default function Hero() {
                             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
                                 <button
                                     onClick={() => scrollToSection('chambers')}
-                                    className="bg-blue-500 cursor-pointer text-primary-foreground px-10 py-5 rounded-2xl text-lg font-bold shadow-2xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all flex items-center justify-center gap-2 group"
+                                    className="bg-blue-500 cursor-pointer text-white px-10 py-5 rounded-2xl text-lg font-bold shadow-2xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all flex items-center justify-center gap-2 group"
                                 >
                                     Find Chambers
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </button>
                                 <button
                                     onClick={() => scrollToSection('features')}
-                                    className="bg-background cursor-pointer text-foreground border-2 border-border/60 px-10 py-5 rounded-2xl text-lg font-bold hover:bg-secondary/50 transition-all flex items-center justify-center gap-2"
+                                    className="bg-background cursor-pointer text-foreground border-2 border-gray-600/20 px-10 py-5 rounded-2xl text-lg font-bold hover:bg-secondary/50 transition-all flex items-center justify-center gap-2"
                                 >
                                     Specializations
                                 </button>
                             </div>
 
-                            <div className="flex items-center gap-6 pt-10 justify-center lg:justify-start border-t border-border/50">
+                            <div className="flex items-center gap-6 pt-10 justify-center lg:justify-start border-t border-gray-600/20">
                                 <div className="flex -space-x-3">
-                                    <div className="w-14 h-14 rounded-full border-4 border-background bg-blue-100 flex items-center justify-center text-blue-600 shadow-xl">
+                                    <div className="w-14 h-14 rounded-full border-4 border-white bg-blue-100 flex items-center justify-center text-blue-600 shadow-xl">
                                         <Globe className="w-7 h-7" />
                                     </div>
-                                    <div className="w-14 h-14 rounded-full border-4 border-background bg-rose-100 flex items-center justify-center text-rose-600 shadow-xl">
+                                    <div className="w-14 h-14 rounded-full border-4 border-white bg-rose-100 flex items-center justify-center text-rose-600 shadow-xl">
                                         <Award className="w-7 h-7" />
                                     </div>
                                 </div>

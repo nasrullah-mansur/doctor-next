@@ -3,7 +3,7 @@ import { SERVICES } from '@/constants'
 export default function Services() {
     return (
         <div id="procedures">
-            <section id="services" className="py-32 bg-background border-t">
+            <section id="services" className="py-32 bg-background border-t border-gray-200">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-20">
 
@@ -19,7 +19,7 @@ export default function Services() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {SERVICES.map((service, index) => (
-                            <div key={index} className="group flex flex-col p-8 rounded-[2.5rem] bg-background border border-border hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500">
+                            <div key={index} className="group flex flex-col p-8 rounded-[2.5rem] bg-background border border-gray-200 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500">
                                 <div className={`w-14 h-14 ${service.color} rounded-2xl flex items-center justify-center text-white mb-8 shadow-xl shadow-inherit transition-all group-hover:rotate-6 group-hover:scale-110`}>
                                     {service.icon}
                                 </div>

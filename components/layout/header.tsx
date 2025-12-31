@@ -95,7 +95,7 @@ export default function Header({ onNavigate, currentView }: { onNavigate?: (view
 
                         <Link
                             href={"/#chambers"}
-                            className="bg-blue-500 text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold shadow-xl shadow-blue-500/20 hover:opacity-90 active:scale-95 transition-all flex items-center gap-2"
+                            className="bg-blue-500 text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-xl shadow-blue-500/20 hover:opacity-90 active:scale-95 transition-all flex items-center gap-2"
                         >
                             Appointment
                             <ChevronRight className="w-4 h-4" />

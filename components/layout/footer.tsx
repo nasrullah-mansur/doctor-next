@@ -17,7 +17,7 @@ export default function Footer({ onNavigate }: { onNavigate?: (view: string) => 
         <div className="grid lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
             <button onClick={() => handleLinkClick('home')} className="flex items-center gap-3 group cursor-pointer text-left">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white group-hover:rotate-6 transition-transform">
+              <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center text-white group-hover:rotate-6 transition-transform">
                 <span className="text-xl font-bold">SR</span>
               </div>
               <div>
@@ -32,7 +32,7 @@ export default function Footer({ onNavigate }: { onNavigate?: (view: string) => 
             </p>
             <div className="flex gap-4">
               {SOCIAL_LINKS.map((link, i) => (
-                <a key={i} href={link.href} className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white hover:border-primary transition-all">
+                <a key={i} href={link.href} className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-all">
                   {link.icon}
                 </a>
               ))}
@@ -43,15 +43,15 @@ export default function Footer({ onNavigate }: { onNavigate?: (view: string) => 
             <h4 className="text-lg font-bold text-slate-900 mb-6">Contact Details</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-slate-600">
-                <Award className="w-5 h-5 text-primary shrink-0" />
+                <Award className="w-5 h-5 text-blue-500 shrink-0" />
                 <span>Dept. of Neurosurgery, DMCH</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-slate-600">
-                <Phone className="w-5 h-5 text-primary shrink-0" />
+                <Phone className="w-5 h-5 text-blue-500 shrink-0" />
                 <span>+880 1713228218</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-slate-600">
-                <MapPin className="w-5 h-5 text-primary shrink-0" />
+                <MapPin className="w-5 h-5 text-blue-500 shrink-0" />
                 <span>Panthapath / Sono Tower, Dhaka</span>
               </li>
             </ul>
@@ -64,7 +64,7 @@ export default function Footer({ onNavigate }: { onNavigate?: (view: string) => 
                 <li key={link.label}>
                   <button
                     onClick={() => handleLinkClick(link.href)}
-                    className="text-sm text-slate-500 hover:text-primary transition-colors font-medium"
+                    className="text-sm text-slate-500 hover:text-blue-500 transition-colors font-medium"
                   >
                     {link.label}
                   </button>
@@ -78,7 +78,7 @@ export default function Footer({ onNavigate }: { onNavigate?: (view: string) => 
             <p className="text-sm text-slate-600 mb-6">Schedule your clinical evaluation today.</p>
             <button
               onClick={() => handleLinkClick('contact')}
-              className="w-full bg-primary text-white rounded-2xl py-4 font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors shadow-lg shadow-primary/10"
+              className="w-full bg-blue-500 text-white rounded-2xl py-4 font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/10"
             >
               Contact Us <Send className="w-4 h-4" />
             </button>
@@ -88,8 +88,8 @@ export default function Footer({ onNavigate }: { onNavigate?: (view: string) => 
         <div className="pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-sm text-slate-500 font-medium">© 2025 Dr. Md. Sumon Rana. All rights reserved.</p>
           <div className="flex gap-8">
-            <button onClick={() => handleLinkClick('contact')} className="text-sm text-slate-500 hover:text-primary font-medium">Emergency Care</button>
-            <button onClick={() => handleLinkClick('home')} className="text-sm text-slate-500 hover:text-primary font-medium">Privacy Policy</button>
+            <button onClick={() => handleLinkClick('contact')} className="text-sm text-slate-500 hover:text-blue-500 font-medium">Emergency Care</button>
+            <button onClick={() => handleLinkClick('home')} className="text-sm text-slate-500 hover:text-blue-500 font-medium">Privacy Policy</button>
           </div>
         </div>
       </div>

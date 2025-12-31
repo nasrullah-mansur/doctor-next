@@ -29,7 +29,7 @@ export default function Chambers() {
   };
   return (
     <>
-      <section id="chambers" className="py-24 bg-white border-t">
+      <section id="chambers" className="py-24 bg-white border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-blue-600 font-bold uppercase tracking-[0.2em] text-sm mb-4">Chambers & Locations</h2>
@@ -52,7 +52,7 @@ export default function Chambers() {
                   </div>
                 </div>
 
-                <div className="space-y-4 border-t pt-6">
+                <div className="space-y-4 border-t border-gray-200 pt-6">
                   <div className="flex justify-between items-center text-sm">
                     <span className="font-bold text-slate-400 uppercase tracking-widest">Schedule</span>
                     <span className="text-slate-900 font-bold">{chamber.schedule}</span>
@@ -72,7 +72,7 @@ export default function Chambers() {
 
                 <button
                   onClick={() => openModal(chamber.name)}
-                  className="w-full mt-8 py-4 bg-white border border-slate-200 rounded-2xl text-sm font-bold text-slate-900 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-all flex items-center justify-center gap-2 shadow-sm"
+                  className="w-full mt-8 py-4 bg-white border cursor-pointer text-md border-slate-200 rounded-2xl font-semibold text-slate-900 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-all flex items-center justify-center gap-2 shadow-sm"
                 >
                   Book Appointment <ChevronRight className="w-4 h-4" />
                 </button>
