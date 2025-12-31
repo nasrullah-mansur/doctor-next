@@ -10,6 +10,7 @@ const interFont = Inter({
   subsets: ["latin"],
 })
 
+
 export const metadata: Metadata = {
   title: 'Dr. Sumon RANA | Neurosurgery Specialist',
   description: 'Assistant Professor, Dept. of Neurosurgery, Dhaka Medical College & Hospital.',

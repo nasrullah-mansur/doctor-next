@@ -40,7 +40,7 @@ export default function Header({ onNavigate, currentView }: { onNavigate?: (view
 
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'py-2 glass shadow-lg border-b' : 'py-6 bg-transparent'}`}>
+        <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'py-2 glass shadow-lg border-b border-gray-200' : 'py-6 bg-transparent'}`}>
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex justify-between items-center">
                     {/* Brand */}
@@ -75,7 +75,7 @@ export default function Header({ onNavigate, currentView }: { onNavigate?: (view
 
                                 {link.subLinks && (
                                     <div className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 w-56 transition-all duration-300 ${activeDropdown === link.label ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
-                                        <div className="glass rounded-2xl shadow-2xl border p-2">
+                                        <div className="glass rounded-2xl shadow-2xl border border-gray-200 p-2">
                                             {link.subLinks.map((sub) => (
                                                 <button
                                                     key={sub.label}
@@ -115,7 +115,7 @@ export default function Header({ onNavigate, currentView }: { onNavigate?: (view
                 <div className="lg:hidden fixed inset-0 top-18 bg-background/95 backdrop-blur-lg z-50 p-6 animate-in slide-in-from-top duration-300 overflow-y-auto">
                     <div className="space-y-2">
                         {NAV_LINKS.map((link) => (
-                            <div key={link.label} className="border-b border-border/50 pb-2">
+                            <div key={link.label} className="border-b border-gray-400/50 pb-2">
                                 <button
                                     className="flex justify-between items-center w-full py-4 text-xl font-bold text-foreground"
                                     onClick={() => handleLinkClick(link.href)}

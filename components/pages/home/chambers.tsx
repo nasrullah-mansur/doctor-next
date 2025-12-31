@@ -41,13 +41,13 @@ export default function Chambers() {
               <div key={i} className="group p-10 rounded-[3rem] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
                   <div className="space-y-2">
-                    <h5 className="text-2xl font-black text-slate-900 font-display leading-tight">{chamber.name}</h5>
+                    <h5 className="text-xl mb-3 font-bold text-slate-900 font-display leading-tight">{chamber.name}</h5>
                     <div className="flex items-center gap-2 text-slate-500 text-sm">
                       <MapPin className="w-4 h-4 text-blue-500" />
                       {chamber.address}
                     </div>
                   </div>
-                  <div className="shrink-0 bg-blue-500 text-white p-4 rounded-2xl shadow-lg shadow-blue-500/20 transition-transform group-hover:scale-110">
+                  <div className="shrink-0 border border-blue-500/50 text-blue-500/80 p-4 rounded-2xl transition-transform group-hover:scale-110">
                     <Clock className="w-6 h-6" />
                   </div>
                 </div>
@@ -72,7 +72,7 @@ export default function Chambers() {
 
                 <button
                   onClick={() => openModal(chamber.name)}
-                  className="w-full mt-8 py-4 bg-white border cursor-pointer text-md border-slate-200 rounded-2xl font-semibold text-slate-900 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-all flex items-center justify-center gap-2 shadow-sm"
+                  className="w-full mt-8 py-4 bg-white border cursor-pointer text-md border-slate-200 rounded-2xl font-semibold text-slate-900 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-all flex items-center justify-center gap-2 shadow-sm shadow-blue-500/20"
                 >
                   Book Appointment <ChevronRight className="w-4 h-4" />
                 </button>
