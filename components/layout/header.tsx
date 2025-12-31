@@ -12,10 +12,10 @@ type ILink = {
 }
 
 const NAV_LINKS: ILink[] = [
-    { label: 'Home', href: 'home' },
-    { label: 'Image Gallery', href: 'images' },
-    { label: 'Video Gallery', href: 'videos' },
-    { label: 'Contact Us', href: 'contact' }
+    { label: 'Home', href: '/' },
+    { label: 'Image Gallery', href: '/gallery/image' },
+    { label: 'Video Gallery', href: '/gallery/video' },
+    { label: 'Contact Us', href: '/contact' }
 ]
 
 export default function Header({ onNavigate, currentView }: { onNavigate?: (view: string) => void; currentView?: string; }) {
@@ -45,7 +45,7 @@ export default function Header({ onNavigate, currentView }: { onNavigate?: (view
                 <div className="flex justify-between items-center">
                     {/* Brand */}
                     <button onClick={() => handleLinkClick('home')} className="flex items-center gap-3 group cursor-pointer text-left">
-                        <div className="w-11 h-11 bg-primary rounded-xl flex items-center justify-center text-white shadow-xl shadow-primary/20 transition-all group-hover:rotate-6">
+                        <div className="w-11 h-11 bg-blue-500 rounded-xl flex items-center justify-center text-white shadow-xl shadow-blue-500/20 transition-all group-hover:rotate-6">
                             <span className="text-xl font-extrabold font-display">SR</span>
                         </div>
                         <div>
@@ -65,13 +65,13 @@ export default function Header({ onNavigate, currentView }: { onNavigate?: (view
                                 onMouseEnter={() => link.subLinks && setActiveDropdown(link.label)}
                                 onMouseLeave={() => setActiveDropdown(null)}
                             >
-                                <button
-                                    onClick={() => handleLinkClick(link.href)}
-                                    className={`cursor-pointer flex items-center gap-1.5 px-4 py-2 rounded-md text-sm font-medium transition-colors ${currentView === link.href ? 'bg-primary/10 text-primary' : 'text-foreground/80 hover:text-primary hover:bg-secondary/50'}`}
+                                <Link
+                                    href={link.href}
+                                    className={`cursor-pointer flex items-center gap-1.5 px-4 py-2 rounded-md text-sm font-medium transition-colors ${currentView === link.href ? 'bg-blue-500/10 text-blue-500' : 'text-foreground/80 hover:text-blue-500 hover:bg-secondary/50'}`}
                                 >
                                     {link.label}
                                     {link.subLinks && <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-300 ${activeDropdown === link.label ? 'rotate-180' : ''}`} />}
-                                </button>
+                                </Link>
 
                                 {link.subLinks && (
                                     <div className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 w-56 transition-all duration-300 ${activeDropdown === link.label ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
@@ -80,7 +80,7 @@ export default function Header({ onNavigate, currentView }: { onNavigate?: (view
                                                 <button
                                                     key={sub.label}
                                                     onClick={() => handleLinkClick(sub.href)}
-                                                    className="w-full cursor-pointer text-left flex items-center px-4 py-3 rounded-xl text-sm font-semibold text-foreground hover:bg-secondary/80 hover:text-primary transition-all"
+                                                    className="w-full cursor-pointer text-left flex items-center px-4 py-3 rounded-xl text-sm font-semibold text-foreground hover:bg-secondary/80 hover:text-blue-500 transition-all"
                                                 >
                                                     {sub.label}
                                                 </button>
@@ -95,8 +95,7 @@ export default function Header({ onNavigate, currentView }: { onNavigate?: (view
 
                         <Link
                             href={"/#chambers"}
-                            // onClick={() => handleLinkClick('about')}
-                            className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold shadow-xl shadow-primary/20 hover:opacity-90 active:scale-95 transition-all flex items-center gap-2"
+                            className="bg-blue-500 text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold shadow-xl shadow-blue-500/20 hover:opacity-90 active:scale-95 transition-all flex items-center gap-2"
                         >
                             Appointment
                             <ChevronRight className="w-4 h-4" />
@@ -125,12 +124,12 @@ export default function Header({ onNavigate, currentView }: { onNavigate?: (view
                                 </button>
                             </div>
                         ))}
-                        <button
-                            onClick={handleAppointmentClick}
-                            className="w-full bg-primary text-white py-5 rounded-2xl font-bold mt-8 shadow-xl"
+                        <Link
+                            href={"/#chambers"}
+                            className="w-full bg-blue-500 text-white py-5 rounded-2xl font-bold mt-8 shadow-xl"
                         >
                             Book Appointment
-                        </button>
+                        </Link>
                     </div>
                 </div>
             )}

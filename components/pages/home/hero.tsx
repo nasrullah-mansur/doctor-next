@@ -19,7 +19,7 @@ export default function Hero() {
                     <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                         {/* Left Content */}
                         <div className="text-center lg:text-left space-y-8 animate-in fade-in slide-in-from-left-8 duration-700">
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary border border-border text-primary text-[11px] font-bold tracking-wider uppercase">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary border border-border text-blue-500 text-[11px] font-bold tracking-wider uppercase">
                                 <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
@@ -48,7 +48,7 @@ export default function Hero() {
                             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
                                 <button
                                     onClick={() => scrollToSection('chambers')}
-                                    className="bg-primary cursor-pointer text-primary-foreground px-10 py-5 rounded-2xl text-lg font-bold shadow-2xl shadow-primary/25 hover:translate-y-[-2px] transition-all flex items-center justify-center gap-2 group"
+                                    className="bg-blue-500 cursor-pointer text-primary-foreground px-10 py-5 rounded-2xl text-lg font-bold shadow-2xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all flex items-center justify-center gap-2 group"
                                 >
                                     Find Chambers
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -90,7 +90,7 @@ export default function Hero() {
                                         width={500}
                                         height={500}
                                     />
-                                    <div className="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+                                    <div className="absolute inset-0 bg-blue-500/10 mix-blend-overlay"></div>
                                 </div>
 
                                 {/* Badges */}
@@ -113,11 +113,11 @@ export default function Hero() {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex gap-10 items-center justify-center grayscale opacity-60 flex-wrap font-display font-semibold text-slate-800 uppercase tracking-tighter text-xs md:text-sm">
                         <span>Assistant Professor, DMCH</span>
-                        <span className="text-primary opacity-30">/</span>
+                        <span className="text-blue-500 opacity-30">/</span>
                         <span>Microvascular Surgery (Japan)</span>
-                        <span className="text-primary opacity-30">/</span>
+                        <span className="text-blue-500 opacity-30">/</span>
                         <span>Neuro Endovascular (India)</span>
-                        <span className="text-primary opacity-30">/</span>
+                        <span className="text-blue-500 opacity-30">/</span>
                         <span>MS Neurosurgery</span>
                     </div>
                 </div>
