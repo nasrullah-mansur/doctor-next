@@ -146,9 +146,11 @@
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #2563eb, #db2777);
+  /* background: linear-gradient(to right, #2563eb, #db2777);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  /* @apply bg-linear-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent block line-clamp-4; */
+  @apply bg-linear-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent block pb-3 line-clamp-4 !mb-0;
 }
 
 @keyframes spin-slow {
