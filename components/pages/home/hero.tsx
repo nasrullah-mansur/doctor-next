@@ -96,12 +96,12 @@ export default function Hero() {
                                 {/* Badges */}
                                 <div className="absolute -bottom-4 -left-8 glass p-5 rounded-3xl shadow-xl border-white/40 z-20 animate-bounce-slow">
                                     <p className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">Faculty</p>
-                                    <p className="text-xl font-black text-foreground font-display">DMCH Dhaka</p>
+                                    <p className="text-xl font-bold text-blue-500 font-display">DMCH Dhaka</p>
                                 </div>
 
                                 <div className="absolute -top-4 -right-8 glass p-5 rounded-3xl shadow-xl border-white/40 z-20">
                                     <p className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">Experience</p>
-                                    <p className="text-xl font-black text-foreground font-display">Senior Surgeon</p>
+                                    <p className="text-xl font-bold text-blue-500 font-display">Senior Surgeon</p>
                                 </div>
                             </div>
                         </div>

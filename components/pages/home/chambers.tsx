@@ -39,29 +39,29 @@ export default function Chambers() {
           <div className="grid lg:grid-cols-2 gap-8">
             {CHAMBERS.map((chamber, i) => (
               <div key={i} className="group p-10 rounded-[3rem] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500">
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+                <div className="flex m-auto md:flex-row items-center md:justify-between justify-center gap-6 mb-8">
                   <div className="space-y-2">
-                    <h5 className="text-xl mb-3 font-bold text-slate-900 font-display leading-tight">{chamber.name}</h5>
-                    <div className="flex items-center gap-2 text-slate-500 text-sm">
+                    <h5 className="text-xl text-center md:text-left mb-3 font-bold text-slate-900 font-display leading-tight">{chamber.name}</h5>
+                    <div className="flex justify-center md:justify-start items-center gap-2 text-slate-500 text-sm">
                       <MapPin className="w-4 h-4 text-blue-500" />
                       {chamber.address}
                     </div>
                   </div>
-                  <div className="shrink-0 border border-blue-500/50 text-blue-500/80 p-4 rounded-2xl transition-transform group-hover:scale-110">
+                  <div className="hidden md:block border border-blue-500/50 text-blue-500/80 p-4 rounded-2xl transition-transform group-hover:scale-110">
                     <Clock className="w-6 h-6" />
                   </div>
                 </div>
 
                 <div className="space-y-4 border-t border-gray-200 pt-6">
-                  <div className="flex justify-between items-center text-sm">
+                  <div className="flex flex-col md:flex-row justify-between items-center text-sm">
                     <span className="font-bold text-slate-400 uppercase tracking-widest">Schedule</span>
                     <span className="text-slate-900 font-bold">{chamber.schedule}</span>
                   </div>
-                  <div className="flex justify-between items-center text-sm">
+                  <div className="flex flex-col md:flex-row justify-between items-center text-sm">
                     <span className="font-bold text-slate-400 uppercase tracking-widest">Location</span>
                     <span className="text-slate-600 font-medium">{chamber.room}</span>
                   </div>
-                  <div className="flex justify-between items-center text-sm pt-4 border-t border-slate-100">
+                  <div className="flex flex-col md:flex-row justify-between items-center text-sm pt-4 border-t border-slate-100">
                     <span className="font-bold text-slate-400 uppercase tracking-widest">Contact</span>
                     <a href={`tel:${chamber.contact}`} className="flex items-center gap-2 text-blue-500 font-black text-lg">
                       <Phone className="w-4 h-4" />

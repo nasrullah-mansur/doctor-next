@@ -3,7 +3,7 @@ import { SERVICES } from '@/constants'
 export default function Services() {
     return (
         <div id="procedures">
-            <section id="services" className="py-32 bg-background border-t border-gray-200">
+            <section id="services" className="pb-32 pt-10 bg-background ">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-20">
 
@@ -19,7 +19,7 @@ export default function Services() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {SERVICES.map((service, index) => (
-                            <div key={index} className="group flex flex-col p-8 rounded-[2.5rem] bg-background border border-gray-200 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500">
+                            <div key={index} className="group flex flex-col p-8 rounded-[2.5rem] bg-background border border-gray-200 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500">
                                 <div className={`w-14 h-14 ${service.color} rounded-2xl flex items-center justify-center text-white mb-8 shadow-xl shadow-inherit transition-all group-hover:rotate-6 group-hover:scale-110`}>
                                     {service.icon}
                                 </div>
@@ -31,8 +31,8 @@ export default function Services() {
                                 <div className="space-y-3 mb-8">
                                     {service.features.map((feat, i) => (
                                         <div key={i} className="flex items-center gap-2.5 text-[12px] text-muted-foreground uppercase tracking-wider">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-primary/40"></div>
-                                            {feat}
+                                            <div className="w-1.5 h-1.5 rounded-full bg-gray-500/50"></div>
+                                            <span className="text-gray-500">{feat}</span>
                                         </div>
                                     ))}
                                 </div>

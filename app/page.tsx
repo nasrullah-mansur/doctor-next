@@ -9,11 +9,13 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Specialize />
+      <Chambers />
       <Services />
+      <Specialize />
+
       <Features />
       <CTASection />
-      <Chambers />
+
     </>
   )
 }

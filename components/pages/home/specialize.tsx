@@ -50,7 +50,7 @@ const SpecializeData = [
 
 export default function Specialize() {
     return (
-        <section id="conditions" className="py-24 bg-white">
+        <section id="conditions" className="pb-24 pt-0 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-20 space-y-4">
                     <h2 className="text-blue-500 font-bold uppercase tracking-[0.2em] text-[11px]">Specialized Expertise</h2>
